@@ -14,12 +14,12 @@ public final class Conexion {
 
     private static Conexion instancia;
 
-    private final String URL =
-            "jdbc:mysql://localhost:3306/db_kinalfest?useSSL=false&serverTimezone=UTC";
-
-    private final String USER = "root";
-
-    private final String PASSWORD = "MiguelAngel2009";
+    private final String URL ="jdbc:mysql://localhost:3306/libreriadb_in4cm"
+            + "?useSSL=false"
+            + "&allowPublicKeyRetrieval=true"
+            + "&serverTimezone=UTC";
+    private final String USER = "IN4CM";
+    private final String PASSWORD = "#NdimAM4";
 
     private Conexion() {
     }
