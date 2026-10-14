@@ -14,7 +14,7 @@ public final class Conexion {
 
     private static Conexion instancia;
 
-    private final String URL ="jdbc:mysql://localhost:3306/libreriadb_in4cm"
+    private final String URL ="jdbc:mysql://localhost:3306/db_kinalfest"
             + "?useSSL=false"
             + "&allowPublicKeyRetrieval=true"
             + "&serverTimezone=UTC";
