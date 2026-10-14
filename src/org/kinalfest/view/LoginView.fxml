@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="org.kinalfest.controller.LoginController"
+ alignment="CENTER" spacing="16" style="-fx-background-color: #eef3fa; -fx-padding: 30;">
+ <Label text="KINALFEST" style="-fx-font-size: 36px; -fx-font-weight: bold; -fx-text-fill: #123e66;"/>
+ <Label text="Sistema de Gestión de Eventos" style="-fx-font-size: 18px;"/>
+ <TextField fx:id="usuario" promptText="Usuario" maxWidth="320"/>
+ <PasswordField fx:id="clave" promptText="Contraseña" maxWidth="320" onAction="#ingresar"/>
+ <Button text="Iniciar sesión" onAction="#ingresar" style="-fx-background-color: #1565a8; -fx-text-fill: white; -fx-font-size: 15px;"/>
+ <Label text="Utiliza un usuario de prueba de la base de datos" style="-fx-text-fill: #667085;"/>
+</VBox>

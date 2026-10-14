@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.kinalfest.controller.PrincipalController"
+ style="-fx-background-color: #f4f7fb;">
+ <top>
+  <VBox spacing="6" style="-fx-background-color: #123e66; -fx-padding: 20;">
+   <Label text="KINALFEST | Panel principal" style="-fx-text-fill: white; -fx-font-size: 26px; -fx-font-weight: bold;"/>
+   <Label fx:id="sesion" style="-fx-text-fill: white;"/>
+  </VBox>
+ </top>
+ <left>
+  <VBox spacing="10" style="-fx-padding: 22; -fx-background-color: #dce8f3;" prefWidth="230">
+   <Button text="Asistentes" onAction="#asistentes" maxWidth="Infinity"/>
+   <Button text="Lugares" onAction="#lugares" maxWidth="Infinity"/>
+   <Button text="Organizadores" onAction="#organizadores" maxWidth="Infinity"/>
+   <Button text="Recursos" onAction="#recursos" maxWidth="Infinity"/>
+   <Button fx:id="eventosBtn" text="Eventos" onAction="#eventos" maxWidth="Infinity"/>
+   <Button fx:id="aprobacionBtn" text="Aprobar eventos" onAction="#aprobacion" maxWidth="Infinity"/>
+   <Button fx:id="ticketsBtn" text="Emitir tickets" onAction="#tickets" maxWidth="Infinity"/>
+   <Button text="Reportes" onAction="#reportes" maxWidth="Infinity"/>
+   <Button text="Cerrar sesión" onAction="#salir" maxWidth="Infinity"/>
+  </VBox>
+ </left>
+ <center><StackPane fx:id="contenido" style="-fx-padding: 20;"><Label text="Selecciona un módulo para comenzar" style="-fx-font-size: 20px;"/></StackPane></center>
+</BorderPane>

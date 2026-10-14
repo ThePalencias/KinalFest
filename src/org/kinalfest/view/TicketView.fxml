@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="org.kinalfest.controller.TicketController"
+   spacing="16" style="-fx-padding: 25;" alignment="TOP_LEFT">
+   <Label text="Emitir ticket" style="-fx-font-size: 25px; -fx-font-weight: bold;"/>
+   <Label text="Introduce el identificador de un evento válido"/>
+   <TextField fx:id="idEvento" promptText="ID del evento" maxWidth="280"/>
+   <Button text="Emitir ticket" onAction="#procesar"/>
+</VBox>
