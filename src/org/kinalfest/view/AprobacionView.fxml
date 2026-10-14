@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="org.kinalfest.controller.AprobacionController"
+   spacing="16" style="-fx-padding: 25;" alignment="TOP_LEFT">
+   <Label text="Aprobar evento" style="-fx-font-size: 25px; -fx-font-weight: bold;"/>
+   <Label text="Introduce el identificador de un evento válido"/>
+   <TextField fx:id="idEvento" promptText="ID del evento" maxWidth="280"/>
+   <Button text="Aprobar evento" onAction="#procesar"/>
+</VBox>
